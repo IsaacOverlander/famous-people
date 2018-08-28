@@ -33,7 +33,7 @@ class Stars extends Component {
                 <label>Role</label>
                 <input onChange={this.handleRoleChange} />
                 <input type="submit" onClick={this.logName} />
-                <p>{this.state.name} is famous for {this.state.role}</p>
+                <p>{this.state.star.name} is famous for {this.state.star.role}</p>
 
             </div>
         )

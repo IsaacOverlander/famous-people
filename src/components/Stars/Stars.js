@@ -4,8 +4,8 @@ class Stars extends Component {
     constructor() {
         super();
         this.state = {
-            name: '',
-            role: ''
+            name: 'Isaac',
+            role: 'this app'
         }
     }
 
@@ -26,6 +26,7 @@ class Stars extends Component {
                 <input onChange={this.handleNameChange}/>
                 <label>Role</label>
                 <input onChange={this.handleRoleChange}/>
+                <p>{this.state.name} is famous for {this.state.role}</p>
             </div>
         )
     }

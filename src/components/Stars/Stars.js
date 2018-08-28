@@ -19,6 +19,10 @@ class Stars extends Component {
         console.log(event.target.value);
     }
 
+    logName = event => {
+        console.log(this.state.name);
+    }    
+
     render() {
         return(
             <div>
@@ -26,7 +30,9 @@ class Stars extends Component {
                 <input onChange={this.handleNameChange}/>
                 <label>Role</label>
                 <input onChange={this.handleRoleChange}/>
+                <input type="submit" onClick={this.logName} />
                 <p>{this.state.name} is famous for {this.state.role}</p>
+
             </div>
         )
     }

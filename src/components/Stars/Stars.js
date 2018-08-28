@@ -12,12 +12,12 @@ class Stars extends Component {
     }
 
     handleNameChange = event => {
-        this.setState({ name: event.target.value });
+        this.setState({ star: { name: event.target.value, role: this.state.star.role} });
         console.log(event.target.value);
     }
 
     handleRoleChange = event => {
-        this.setState({ role: event.target.value });
+        this.setState({ star: { name: this.state.star.name, role: event.target.value} });
         console.log(event.target.value);
     }
 
